@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Online Attendance</string>
+
+    <string name="single_space">\u00a0</string>
+    <string name="start_bracket">(</string>
+    <string name="end_bracket">)</string>
+    <string name="page">Page:</string>
+    <string name="minus">-</string>
+
+    <string name="no_name">Unknown Store</string>
+    <string name="no_id">No Store ID</string>
+    <string name="no_location">Unknown Location</string>
+
+    <string name="no_internet_toast">No internet connection</string>
+    <string name="no_location_found">We could not find you location. Please try again.</string>
+
+    <string name="user_name_hint">User Name</string>
+    <string name="user_id_hint">User ID</string>
+    <string name="submit">Submit</string>
+
+    <string name="no_user_name">"Please enter your Name"</string>
+    <string name="no_user_id">"Please enter your ID"</string>
+
+    <string name="common_error_message">Something went wrong. Please try again.</string>
+    <string name="empty_store_list">No store found.\nPlease swipe down to refresh.</string>
+
+    <string name="enable_gps">We need your location for attendance. Please allow to enable your location.</string>
+    <string name="accept_permission">We need your location for attendance. Please go to Settings > Permissions and allow Location permission to complete your attendance.</string>
+
+</resources>

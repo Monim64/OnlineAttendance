@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="storeViewModel"
+            type="com.monim.onlineattendance.view_models.StoreListViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|end"
+        android:background="@color/page_background"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp">
+
+        <ImageView
+            android:id="@+id/startButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@{storeViewModel.metaData.startEnabled() ? @drawable/ic_start : @drawable/ic_start_gray}"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/previousButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@{storeViewModel.metaData.previousEnabled() ? @drawable/ic_previous : @drawable/ic_previous_gray}"
+            android:padding="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{storeViewModel.metaData.footerText()}"
+            android:textColor="@color/gray_light"
+            android:padding="2dp"/>
+
+        <ImageView
+            android:id="@+id/nextButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@{storeViewModel.metaData.nextEnabled() ? @drawable/ic_next : @drawable/ic_next_gray}"
+            android:padding="8dp"/>
+
+        <ImageView
+            android:id="@+id/endButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@{storeViewModel.metaData.endEnabled() ? @drawable/ic_end : @drawable/ic_end_gray}"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+
+</layout>
